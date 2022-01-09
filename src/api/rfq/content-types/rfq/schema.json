@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "rfqs",
+  "info": {
+    "singularName": "rfq",
+    "pluralName": "rfqs",
+    "displayName": "RFQ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "homepage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "artworks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artwork.artwork"
+    },
+    "statement": {
+      "type": "richtext"
+    },
+    "statementImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "password": {
+      "type": "string",
+      "maxLength": 10,
+      "minLength": 3
+    }
+  }
+}

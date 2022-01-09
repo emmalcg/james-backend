@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artworks",
+  "info": {
+    "singularName": "artwork",
+    "pluralName": "artworks",
+    "displayName": "Artwork",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "yearEnded": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "materials": {
+      "type": "string",
+      "required": true
+    },
+    "client": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "dimensions": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "artworks"
+    },
+    "people": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::person.person",
+      "inversedBy": "artworks"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "yearStarted": {
+      "type": "integer",
+      "required": true
+    },
+    "Collection": {
+      "type": "string"
+    },
+    "RFQ": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "archive": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  }
+}

@@ -4,7 +4,7 @@ module.exports = [
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
-        useDeaults: true,
+        useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
           'img-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],

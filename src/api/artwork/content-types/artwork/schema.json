@@ -33,7 +33,7 @@
     "location": {
       "type": "string"
     },
-    "dimensions": {
+    "dimensionsToDelete": {
       "type": "string",
       "required": true
     },
@@ -75,6 +75,9 @@
       "type": "boolean",
       "required": true,
       "default": true
+    },
+    "dimensions": {
+      "type": "richtext"
     }
   }
 }

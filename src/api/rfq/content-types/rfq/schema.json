@@ -44,6 +44,21 @@
       "type": "string",
       "maxLength": 10,
       "minLength": 3
+    },
+    "statementImageMobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "statementImageCaption": {
+      "type": "richtext"
+    },
+    "homepageImageCaption": {
+      "type": "richtext"
     }
   }
 }

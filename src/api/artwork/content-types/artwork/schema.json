@@ -33,10 +33,6 @@
     "location": {
       "type": "string"
     },
-    "dimensionsToDelete": {
-      "type": "string",
-      "required": true
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",

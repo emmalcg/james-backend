@@ -5,8 +5,7 @@ module.exports = ({ env }) => ({
     shadowCRUD: true,
     playgroundAlways: true,
     depthLimit: 7,
-    amountLimit: 100,
-    defaultLimit: 100,
+    amountLimit: 5,
     introspection: true,
     apolloServer: {
       tracing: false,

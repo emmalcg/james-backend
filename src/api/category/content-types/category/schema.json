@@ -22,12 +22,6 @@
       "target": "api::artwork.artwork",
       "mappedBy": "categories"
     },
-    "articles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::article.article",
-      "inversedBy": "categories"
-    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -40,6 +34,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::text.text",
+      "inversedBy": "categories"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
       "inversedBy": "categories"
     }
   }

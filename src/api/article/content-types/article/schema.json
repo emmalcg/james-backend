@@ -33,6 +33,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::person.person"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "articles"
     }
   }
 }

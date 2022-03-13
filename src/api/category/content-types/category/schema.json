@@ -21,6 +21,26 @@
       "relation": "manyToMany",
       "target": "api::artwork.artwork",
       "mappedBy": "categories"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "categories"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Work",
+        "About"
+      ],
+      "required": true
+    },
+    "texts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::text.text",
+      "inversedBy": "categories"
     }
   }
 }

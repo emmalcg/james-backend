@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "type": {
+    "title": {
       "type": "string",
       "required": true
     },
@@ -28,7 +28,7 @@
       "target": "api::article.article",
       "inversedBy": "categories"
     },
-    "Type": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "Work",

@@ -46,19 +46,23 @@
       "minLength": 3
     },
     "statementImageMobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "statementImageCaption": {
       "type": "richtext"
     },
     "homepageImageCaption": {
       "type": "richtext"
+    },
+    "SiteOpen": {
+      "type": "boolean"
     }
   }
 }

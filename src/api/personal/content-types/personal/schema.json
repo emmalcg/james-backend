@@ -29,6 +29,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::artwork.artwork"
+    },
+    "SiteOpen": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

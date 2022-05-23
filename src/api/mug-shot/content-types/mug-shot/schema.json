@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mug_shots",
+  "info": {
+    "singularName": "mug-shot",
+    "pluralName": "mug-shots",
+    "displayName": "Mug Shot"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "James Carl",
+      "required": true
+    },
+    "Photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

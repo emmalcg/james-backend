@@ -32,7 +32,7 @@
     },
     "SiteOpen": {
       "type": "boolean",
-      "default": false
+      "default": true
     }
   }
 }

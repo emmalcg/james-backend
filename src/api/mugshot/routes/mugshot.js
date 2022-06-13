@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * mug-shot router.
+ * mugshot router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::mug-shot.mug-shot');
+module.exports = createCoreRouter('api::mugshot.mugshot');

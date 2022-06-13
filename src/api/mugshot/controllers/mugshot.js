@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- *  mug-shot controller
+ *  mugshot controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::mug-shot.mug-shot');
+module.exports = createCoreController('api::mugshot.mugshot');

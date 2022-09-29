@@ -26,7 +26,8 @@
       "type": "enumeration",
       "enum": [
         "Work",
-        "About"
+        "About",
+        "Year"
       ],
       "required": true
     },

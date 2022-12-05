@@ -53,6 +53,9 @@
     },
     "author": {
       "type": "string"
+    },
+    "displayName": {
+      "type": "string"
     }
   }
 }

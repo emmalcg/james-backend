@@ -4,7 +4,8 @@
   "info": {
     "singularName": "serie",
     "pluralName": "series",
-    "displayName": "Series"
+    "displayName": "Series",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,11 @@
     },
     "displayName": {
       "type": "string"
+    },
+    "artworks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artwork.artwork"
     }
   }
 }

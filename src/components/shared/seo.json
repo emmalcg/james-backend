@@ -34,6 +34,11 @@
     "metaRobots": {
       "type": "string",
       "regex": "[^,]+"
+    },
+    "sublink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
     }
   }
 }

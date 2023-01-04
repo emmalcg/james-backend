@@ -21,11 +21,6 @@
     },
     "displayName": {
       "type": "string"
-    },
-    "artworks": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::artwork.artwork"
     }
   }
 }

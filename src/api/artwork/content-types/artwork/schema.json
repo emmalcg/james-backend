@@ -78,6 +78,11 @@
     "Slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "series": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::serie.serie"
     }
   }
 }

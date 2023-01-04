@@ -20,6 +20,15 @@
     "Slug": {
       "type": "uid",
       "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "sublink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
     }
   }
 }

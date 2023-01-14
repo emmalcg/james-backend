@@ -77,12 +77,23 @@
     },
     "Slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "title",
+      "required": true
     },
     "series": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::serie.serie"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

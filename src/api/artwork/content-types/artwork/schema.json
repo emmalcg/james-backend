@@ -64,7 +64,7 @@
     },
     "RFQ": {
       "type": "boolean",
-      "default": true,
+      "default": false,
       "required": true
     },
     "archive": {

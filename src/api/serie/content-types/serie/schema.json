@@ -21,6 +21,18 @@
     },
     "displayName": {
       "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "yearStarted": {
+      "type": "integer",
+      "required": true
+    },
+    "yearEnded": {
+      "type": "string"
     }
   }
 }

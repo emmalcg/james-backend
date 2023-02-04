@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "Slug": {
-      "type": "uid",
-      "targetField": "Title"
+    "slug": {
+      "type": "uid"
     },
     "displayName": {
       "type": "string"
@@ -33,6 +33,18 @@
     },
     "yearEnded": {
       "type": "string"
+    },
+    "artwork": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::artwork.artwork",
+      "inversedBy": "series"
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::page.page",
+      "mappedBy": "series"
     }
   }
 }

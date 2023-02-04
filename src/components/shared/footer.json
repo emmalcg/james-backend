@@ -11,6 +11,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.link"
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page"
     }
   }
 }

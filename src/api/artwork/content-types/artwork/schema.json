@@ -75,7 +75,7 @@
     "dimensions": {
       "type": "richtext"
     },
-    "Slug": {
+    "slug": {
       "type": "uid",
       "targetField": "title",
       "required": true
@@ -83,7 +83,8 @@
     "series": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::serie.serie"
+      "target": "api::serie.serie",
+      "mappedBy": "artwork"
     },
     "thumbnail": {
       "type": "media",
@@ -94,6 +95,18 @@
         "files",
         "videos"
       ]
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::page.page",
+      "inversedBy": "artworks"
+    },
+    "exhibitions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::exhibition.exhibition",
+      "inversedBy": "artworks"
     }
   }
 }

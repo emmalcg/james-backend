@@ -16,11 +16,6 @@
       "type": "string",
       "required": true
     },
-    "slug": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
     "year": {
       "type": "integer",
       "required": true
@@ -36,6 +31,16 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "exhibitions"
+    },
+    "artworks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::artwork.artwork",
+      "mappedBy": "exhibitions"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

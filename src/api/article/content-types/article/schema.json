@@ -60,6 +60,9 @@
     "passwordProtected": {
       "type": "boolean",
       "default": true
+    },
+    "year": {
+      "type": "integer"
     }
   }
 }

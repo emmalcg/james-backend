@@ -66,6 +66,9 @@
     },
     "issueNumber": {
       "type": "string"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }

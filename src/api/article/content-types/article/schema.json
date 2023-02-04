@@ -28,9 +28,6 @@
     "title": {
       "type": "string"
     },
-    "date": {
-      "type": "date"
-    },
     "person": {
       "type": "relation",
       "relation": "oneToOne",
@@ -48,8 +45,8 @@
       "target": "api::exhibition.exhibition",
       "inversedBy": "articles"
     },
-    "description": {
-      "type": "text"
+    "publication": {
+      "type": "string"
     },
     "author": {
       "type": "string"
@@ -63,6 +60,12 @@
     },
     "year": {
       "type": "integer"
+    },
+    "editor": {
+      "type": "string"
+    },
+    "issueNumber": {
+      "type": "string"
     }
   }
 }

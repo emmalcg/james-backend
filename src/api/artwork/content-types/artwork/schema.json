@@ -80,12 +80,6 @@
       "targetField": "title",
       "required": true
     },
-    "series": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::serie.serie",
-      "mappedBy": "artwork"
-    },
     "thumbnail": {
       "type": "media",
       "multiple": false,
@@ -106,6 +100,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::exhibition.exhibition",
+      "inversedBy": "artworks"
+    },
+    "series": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::serie.serie",
       "inversedBy": "artworks"
     }
   }

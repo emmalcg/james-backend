@@ -34,9 +34,9 @@
     "yearEnded": {
       "type": "string"
     },
-    "artwork": {
+    "artworks": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::artwork.artwork",
       "inversedBy": "series"
     },

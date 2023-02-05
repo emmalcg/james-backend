@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "link": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.link"
-    },
     "slug": {
       "type": "uid"
     },
@@ -46,6 +41,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "sublink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.sublink"
     }
   }
 }

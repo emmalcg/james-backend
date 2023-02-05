@@ -36,9 +36,9 @@
     },
     "artworks": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::artwork.artwork",
-      "inversedBy": "series"
+      "mappedBy": "series"
     },
     "pages": {
       "type": "relation",

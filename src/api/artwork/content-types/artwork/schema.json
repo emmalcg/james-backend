@@ -104,7 +104,7 @@
     },
     "series": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::serie.serie",
       "inversedBy": "artworks"
     }

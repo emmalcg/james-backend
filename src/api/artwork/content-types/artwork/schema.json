@@ -33,9 +33,9 @@
     "location": {
       "type": "string"
     },
-    "categories": {
+    "category": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "artworks"
     },
@@ -107,6 +107,10 @@
       "relation": "manyToOne",
       "target": "api::serie.serie",
       "inversedBy": "artworks"
+    },
+    "decade": {
+      "type": "biginteger",
+      "required": true
     }
   }
 }

@@ -34,3 +34,5 @@ after doing `yarn install`, `yarn build` before `yarn develop` to ensure content
 ## ⚙️ Deployment
 
 automatic deployment through heroku when pushing to main : deployed at https://james-backend.herokuapp.com/
+
+yarn run develop

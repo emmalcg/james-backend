@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepage_works",
+  "info": {
+    "singularName": "homepage-work",
+    "pluralName": "homepage-works",
+    "displayName": "homepageWork"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "linkTitle": {
+      "type": "text"
+    }
+  }
+}

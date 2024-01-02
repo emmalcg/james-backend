@@ -42,16 +42,16 @@
       "required": true,
       "unique": true
     },
-    "artworks": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::artwork.artwork",
-      "mappedBy": "category"
-    },
     "series": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::serie.serie",
+      "inversedBy": "categories"
+    },
+    "artworks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::artwork.artwork",
       "inversedBy": "categories"
     }
   }

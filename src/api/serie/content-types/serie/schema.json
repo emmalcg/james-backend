@@ -22,10 +22,11 @@
     "displayName": {
       "type": "string"
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "series"
     },
     "yearStarted": {
       "type": "integer",

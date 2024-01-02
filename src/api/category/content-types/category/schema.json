@@ -44,7 +44,7 @@
     },
     "series": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::serie.serie",
       "inversedBy": "categories"
     },

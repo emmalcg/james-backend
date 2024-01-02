@@ -22,12 +22,6 @@
     "displayName": {
       "type": "string"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "series"
-    },
     "yearStarted": {
       "type": "integer",
       "required": true
@@ -45,6 +39,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::page.page",
+      "mappedBy": "series"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
       "mappedBy": "series"
     }
   }

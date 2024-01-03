@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
     shadowCRUD: true,
     config: {
       playgroundAlways: true,
-      depthLimit: 10,
+      depthLimit: 20,
       amountLimit: 100,
       maxLimit: 100,
       defaultLimit: 100
